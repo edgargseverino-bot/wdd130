@@ -1,7 +1,7 @@
 :root{
     --secondary-color: #0f77a0;  /* Light blue Forest*/
     --accent-color1: #264653; /*Blue color */
-    --accent-color2: #fff; 
+    --accent-color2: #ffffff; 
     --body-font: Arial, Helvetica, sans-serif;
     --heading-font: "Times New Roman", "Georgia", serif;
 }
@@ -43,7 +43,7 @@ header nav ul{
     text-decoration: none;
     list-style: none;
 }
-header nav ul li a {
+header nav ul a {
     color: var(--accent-color1);
     text-decoration: none;
     font-weight: bold;
@@ -91,6 +91,10 @@ nav, p, section
     background-color: color-mix(in srgb, var(--secondary-color) 70%, transparent);
     border-radius: 8px;
     color: var(--accent-color2);
+    float: right;
+    
+}
+.hero article img{
     float: right;
 }
 .hero article p{
