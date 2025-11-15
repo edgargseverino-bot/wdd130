@@ -1,5 +1,4 @@
 :root{
-    --primary-color: #005a05; /* forest color */
     --secondary-color: #0f77a0;  /* Light blue Forest*/
     --accent-color1: #264653; /*Blue color */
     --accent-color2: #fff; 
@@ -59,7 +58,7 @@ nav, p, section
     margin: 0px;
     padding: 8px;
 }
-.socialmedia a, header ul{
+.socialmedia a{
     text-decoration: none;
     list-style: none;
 
@@ -89,9 +88,10 @@ nav, p, section
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
-    background-color: color-mix(in srgb, var(--secondary-color) 60%, transparent);
+    background-color: color-mix(in srgb, var(--secondary-color) 70%, transparent);
     border-radius: 8px;
     color: var(--accent-color2);
+    float: right;
 }
 .hero article p{
     flex: 1;
