@@ -11,10 +11,14 @@
 nav {
     background-color: rgb(99, 99, 100);
     padding: var(--ten-px);
+   display: flex;
+   gap: 20px;
+
 }
 
 nav a{
-    color: rgb(0, 0, 0);
+    text-decoration: none;
+    color: white;
     display: block;
     padding: 20px;
 }
@@ -24,7 +28,7 @@ h1{
 }
 
 main img{
-    width: 150px;
+    width: 180px;
     height: auto;
     border: 1px solid var(--black-color);
     padding: 2px;
@@ -38,6 +42,10 @@ p{
 
 main{
     max-width: 840px;
+}
+main ul {
+    max-width: 440px;
+
 }
 
 aside{
@@ -78,7 +86,17 @@ footer{
 .box{
      margin: 1rem;
   border: 1px solid rgb(0 0 0 / 10%);
-  padding: 1rem;
+  padding: 0.5rem;
   background-color: #ddd;
   color: #000;
+}
+.box li{
+list-style: none; /* remove bullets */
+  margin: 0;
+  padding: 0;
+}
+.box a {
+  text-decoration: none;
+  padding: 0.25rem 0.5rem; /* control text size/height */
+  display: inline-block;
 }
