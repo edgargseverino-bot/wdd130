@@ -1,0 +1,127 @@
+:root{
+    --primary-color: #005a05; /* forest color */
+    --secondary-color: #0f77a0;  /* Light blue Forest*/
+    --accent-color1: #264653; /*Blue color */
+    --accent-color2: #fff; 
+    --body-font: Arial, Helvetica, sans-serif;
+    --heading-font: "Times New Roman", "Georgia", serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent-color1);
+}
+
+header, footer, main{
+    
+    width: 100%;
+}
+header{
+    
+    background-color :var(--accent-color2);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+header img{
+    width: 70px;
+    height: auto;
+}
+
+header nav ul{
+    display: flex;
+    gap: 1.5rem;
+    color: var(--accent-color2);
+    text-decoration: none;
+    list-style: none;
+}
+header nav ul li a {
+    color: var(--accent-color1);
+    text-decoration: none;
+    font-weight: bold;
+}
+h1, h2{
+    font-family: var(--body-font);
+    color: var(--accent-color2);
+    background-color: var(--accent-color1);
+}
+nav, p, section
+{
+    margin: 0px;
+    padding: 8px;
+}
+.socialmedia a, header ul{
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.hero{
+    position: relative;
+}
+
+.hero img{
+    display: block;
+    width: 100%;
+    height: 32rem;
+    object-fit: cover;
+
+}
+
+.hero article{
+    
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    background-color: color-mix(in srgb, var(--secondary-color) 60%, transparent);
+    border-radius: 8px;
+    color: var(--accent-color2);
+}
+.hero article p{
+    flex: 1;
+    margin: 0;
+        
+}
+.hero article img{
+    width: 170px;
+    height: auto;
+    border-radius: 6px;
+}
+.hero h1{
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    opacity: 1;
+    color: var(--accent-color2);
+    background-color: rgba(0, 0, 0, 0.4);
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    border-radius: 8px;
+    
+}
+
+ h2{
+    text-align: center;
+    color: var(--accent-color2);
+    background-color: var(--accent-color1);
+    padding: 0.5rem;
+    margin-top: 2rem;
+ }
