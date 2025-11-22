@@ -127,9 +127,6 @@ nav, p, section
     float: right;
     
 }
-.hero article img{
-    float: right;
-}
 .hero article p{
     flex: 1;
     margin: 0;
@@ -139,6 +136,7 @@ nav, p, section
     width: 170px;
     height: auto;
     border-radius: 6px;
+    float: right;
 }
 .hero h1{
     position: absolute;
