@@ -13,6 +13,8 @@ nav {
     padding: var(--ten-px);
    display: flex;
    gap: 20px;
+   justify-content: space-evenly;
+   align-items: center;
 
 }
 
@@ -23,26 +25,49 @@ nav a{
     padding: 20px;
 }
 
-h1{
-    color: black;
+
+
+.grid, header, footer{
+    margin:10px; 
+    max-width: 800px;
+}
+.grid{
+    display: flex;
+    display: grid;
+    align-items: center;
+    
+}
+main h1{
+    display: grid;
+    color: rgb(0, 0, 0);
+    border-bottom:solid black 1px;
+    align-content: start;
+    justify-content: center;
+    grid-row-start:  2;
+    grid-row-end: 1;
 }
 
+main{
+    grid-template-columns: 1/2fr 1fr;
+    grid-template-rows: 1/2fr 1fr;
+    margin: 1rem;
+}
 main img{
+    display: grid;
     width: 180px;
     height: auto;
     border: 1px solid var(--black-color);
     padding: 2px;
     box-shadow: 0 0 30px gray;
     margin:10px;
-    float: right;
+    grid-row: 2;
+    
 }
 p{
     padding: var(--ten-px);
 }
 
-main{
-    max-width: 840px;
-}
+
 main ul {
     max-width: 440px;
 
@@ -58,6 +83,13 @@ aside{
     color: var(--black-color);
     position: relative;
     left: 1cm;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+header, footer{
+    width: 840px;
+    margin: 0 auto;
 }
 aside h2{
     position: absolute;
@@ -89,6 +121,11 @@ footer{
   padding: 0.5rem;
   background-color: #ddd;
   color: #000;
+  
+}
+.box aside{
+    
+    
 }
 .box li{
 list-style: none; /* remove bullets */
@@ -100,3 +137,6 @@ list-style: none; /* remove bullets */
   padding: 0.25rem 0.5rem; /* control text size/height */
   display: inline-block;
 }
+
+/* According to html grid is a container(the father of edgar...
+and wdd130, including the description and also the country photo and the short description */
