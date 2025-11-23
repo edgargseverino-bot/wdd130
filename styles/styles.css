@@ -8,6 +8,10 @@
     --ten-px: 10px;
     --black-color: #000;
 }
+header{
+    display: flex;
+    justify-content: center;
+}
 nav {
     background-color: rgb(99, 99, 100);
     padding: var(--ten-px);
@@ -15,6 +19,8 @@ nav {
    gap: 20px;
    justify-content: space-evenly;
    align-items: center;
+   gap: 40px;
+
 
 }
 
@@ -26,33 +32,32 @@ nav a{
 }
 
 
-
-.grid, header, footer{
-    margin:10px; 
-    max-width: 800px;
-}
+header, footer{
+    width: 840px;
+    margin: 0 auto;
+    
+} 
 .grid{
     display: flex;
     display: grid;
-    align-items: center;
-    
+    grid-template-columns: 400px 1fr;    
 }
-main h1{
-    display: grid;
+.grid h1{
+    display: flex;
     color: rgb(0, 0, 0);
     border-bottom:solid black 1px;
     align-content: start;
     justify-content: center;
-    grid-row-start:  2;
-    grid-row-end: 1;
+    align-items: normal;
+    padding: 1px;
+    font-size: 20px;
+    width: 100%;
+
+
 }
 
-main{
-    grid-template-columns: 1/2fr 1fr;
-    grid-template-rows: 1/2fr 1fr;
-    margin: 1rem;
-}
-main img{
+
+.grid main img{
     display: grid;
     width: 180px;
     height: auto;
@@ -63,18 +68,14 @@ main img{
     grid-row: 2;
     
 }
-p{
+.box p{
+    display: flex;
     padding: var(--ten-px);
 }
 
-
-main ul {
-    max-width: 440px;
-
-}
-
-aside{
+.grid aside{
     width: 20rem;
+    height: auto;
     margin: var(--ten-px);
     border: 10px solid var(--black-color 0.2);
     padding: var(--ten-px);
@@ -86,26 +87,21 @@ aside{
     grid-column: 1/2;
     grid-row: 1/2;
 }
-
-header, footer{
-    width: 840px;
-    margin: 0 auto;
+.grid main{
+    margin-right: 80px;
 }
-aside h2{
+.grid aside h2{
     position: absolute;
     bottom: 6.5cm;
     right: 3rem;
+     margin-bottom: 10px;
     
 }
-aside img{
-    width: 15em;
-    margin: 13%;
+.grid aside img{
+
+    width: 100%;
     height: auto;
-    float: right;
-    position: relative;
-    left: 5%;
-    text-align: center;
-    
+    border-radius: 4px;
 }
 
 footer{
@@ -116,16 +112,15 @@ footer{
 }
 /* Class Selectors */
 .box{
-     margin: 1rem;
+    margin: 1rem;
   border: 1px solid rgb(0 0 0 / 10%);
   padding: 0.5rem;
   background-color: #ddd;
   color: #000;
-  
-}
-.box aside{
-    
-    
+    display: flex;
+    flex-direction: column; /* stack items vertically */
+    align-items: center;    /* center everything */
+    gap: 10px;
 }
 .box li{
 list-style: none; /* remove bullets */
@@ -137,6 +132,11 @@ list-style: none; /* remove bullets */
   padding: 0.25rem 0.5rem; /* control text size/height */
   display: inline-block;
 }
+.box h2{
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: center;
 
+}
 /* According to html grid is a container(the father of edgar...
 and wdd130, including the description and also the country photo and the short description */
