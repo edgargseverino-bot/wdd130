@@ -2,6 +2,7 @@
     --secondary-color: rgb(15, 119, 160);  /* Light blue Forest*/
     --accent-color1: rgb(38, 70, 83); /*Blue color */
     --accent-color2: rgb(255, 255, 255); 
+    --accent-color3: rgb(0, 0, 0);
     --body-font: Arial, Helvetica, sans-serif;
     --heading-font: "Times New Roman", "Georgia", serif;
 }
@@ -13,8 +14,6 @@
 }
 
 body {
-    display: grid;
-    
     font-family: var(--body-font);
     color: var(--accent-color1);
 }
@@ -50,7 +49,7 @@ header nav ul li a {
     text-decoration: none;
     font-weight: bold;
 }
-h1, h2{
+h2{
     font-family: var(--body-font);
     color: var(--accent-color2);
     background-color: var(--accent-color1);
@@ -60,26 +59,7 @@ nav, p, section
     margin: 0px;
     padding: 8px;
 }
-footer{
-    display: grid;
-    grid-template-columns: 1fr 400px;
-    justify-content: end;
-}
-footer p{
-    display: flex;
-    justify-content: end;
-}
-.socialmedia{
-    display: flex;
-    flex-direction: wrap;
-    text-decoration: none;
-    list-style: none;
-    justify-content: end;
-    margin: 0 50px 0 0;  
-}
-.socialmedia a{
-    text-decoration: none;
-}
+
 .hero{
     position: relative;
     display: grid;
@@ -125,11 +105,12 @@ footer p{
 
 .left_text{
     grid-column: 1;
+    color: var(--accent-color3);
 
 
 }
 .right_text {
-    
+    color: var(--accent-color3);
     grid-column: 3;
 }
 
@@ -172,7 +153,7 @@ footer p{
     text-align: center;
     opacity: 1;
     color: var(--accent-color2);
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgb(0, 0, 0, 0.4);
     font-family: var(--heading-font);
     font-size: 2rem;
     border-radius: 8px;
@@ -182,7 +163,7 @@ footer p{
  h2{
     text-align: center;
     color: var(--accent-color2);
-    background-color: var(--accent-color1);
+    background-color: rgb(0, 0, 0, 0.4);
     padding: 0.5rem;
     margin-top: 2rem;
     display: flex;
@@ -200,10 +181,12 @@ footer p{
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 20px;
+    
 }
 
 .adventure-row figure {
     text-align: center;
+    color: var(--accent-color3);
 }
 
 .adventure-row img {
@@ -218,3 +201,26 @@ footer p{
     margin-top: 8px;
     font-weight: bold;
 }
+
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 400px;
+        justify-content: end;
+    }
+    footer p{
+        display: flex;
+        justify-content: end;
+        color: var(--accent-color3);
+    }
+    .socialmedia{
+        display: flex;
+        flex-wrap: wrap;
+        text-decoration: none;
+        list-style: none;
+        justify-content: end;
+        margin: 0 50px 0 0;  
+        gap: 10px;
+    }
+    .socialmedia a{
+        text-decoration: none;
+    }
