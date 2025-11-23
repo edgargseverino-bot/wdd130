@@ -77,6 +77,9 @@ footer p{
     justify-content: end;
     margin: 0 50px 0 0;  
 }
+.socialmedia a{
+    text-decoration: none;
+}
 .hero{
     position: relative;
     display: grid;
