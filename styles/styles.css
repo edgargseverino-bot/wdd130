@@ -71,6 +71,7 @@ header, footer{
 .box p{
     display: flex;
     padding: var(--ten-px);
+    justify-content: end;
 }
 
 .grid aside{
@@ -89,6 +90,7 @@ header, footer{
 }
 .grid main{
     margin-right: 80px;
+
 }
 .grid aside h2{
     position: absolute;
@@ -131,12 +133,6 @@ list-style: none; /* remove bullets */
   text-decoration: none;
   padding: 0.25rem 0.5rem; /* control text size/height */
   display: inline-block;
-}
-.box h2{
-    margin: 0;
-    font-size: 1.2rem;
-    text-align: center;
-
 }
 /* According to html grid is a container(the father of edgar...
 and wdd130, including the description and also the country photo and the short description */
