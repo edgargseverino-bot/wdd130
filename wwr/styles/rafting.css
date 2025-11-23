@@ -1,7 +1,7 @@
 :root{
-    --secondary-color: #0f77a0;  /* Light blue Forest*/
-    --accent-color1: #264653; /*Blue color */
-    --accent-color2: #ffffff; 
+    --secondary-color: rgb(15, 119, 160);  /* Light blue Forest*/
+    --accent-color1: rgb(38, 70, 83); /*Blue color */
+    --accent-color2: rgb(255, 255, 255); 
     --body-font: Arial, Helvetica, sans-serif;
     --heading-font: "Times New Roman", "Georgia", serif;
 }
@@ -25,7 +25,7 @@ header, footer, main{
 }
 header{
     display: grid;
-    background-color :var(--accent-color2);
+    background-color: var(--accent-color2);
     text-decoration: none;
     grid-template-columns: 1fr 1fr;
 }
@@ -60,12 +60,23 @@ nav, p, section
     margin: 0px;
     padding: 8px;
 }
-.socialmedia a{
+footer{
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    justify-content: end;
+}
+footer p{
+    display: flex;
+    justify-content: end;
+}
+.socialmedia{
+    display: flex;
+    flex-direction: wrap;
     text-decoration: none;
     list-style: none;
-
+    justify-content: end;
+    margin: 0 50px 0 0;  
 }
-
 .hero{
     position: relative;
     display: grid;
@@ -89,6 +100,18 @@ nav, p, section
 
 .history {
     text-align: center;
+}
+
+.history h2,
+.adventure h2 {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: var(--accent-color1);
+    color: var(--accent-color2);
+    text-align: center;
+    border-radius: 6px;
 }
 
 .history img {
