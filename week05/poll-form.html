@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="styles\poll-form.css">
+
+<body>
+
+    <form>
+        <label for="fullname">Full name: </label>
+        <input type="text" id="fullname" name="fullname" required>
+        <label for="useremail">Email:</label>
+        <input type="email" name="useremail" id="useremail" required>
+        <label for="Browser"> What is your favorite Browser</label>
+        <select name="Browser" id="Browser">
+            <option value="chrome">Chrome</option>
+            <option value="Brave">Brave</option>
+            <option value="Opera">Opera</option>
+            <option value="Firefox">Firefox</option>
+            <option value="other">Other</option>
+        </select>
+        <label for="pet">Do you have a household pet?</label>
+        <input type="checkbox" name="pet" id="pet">
+        <label for="feedback">List the places you have lived</label>
+        <textarea name="feedback" id="feedback" row="2"
+            placeholder="Stillwater Florida, Amsterdam Netherlands, Tibuktu Mali"></textarea>
+        <button type="submit"> Submit Poll</button>
+    </form>
+</body>

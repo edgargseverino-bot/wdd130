@@ -213,7 +213,151 @@ nav, p, section
         justify-content: end;
         margin: 0 50px 0 0;  
         gap: 10px;
+    
     }
     .socialmedia a{
         text-decoration: none;
     }
+
+    /* Contact html.
+    This will include some specific changes */
+.all{
+  height: 840px
+}
+.super{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+.divide{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 400px;
+    gap: 10px;
+    margin: 0 auto;
+    width: 90%
+}
+.location{
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.purpose-row {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+  margin-top: 5px;
+}
+
+.purpose-title {
+    font-weight: bold;
+}
+
+.purpose-options {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.user {
+  margin: 0 auto;
+  padding: 1rem;
+  border: 1px solid rgba(92, 12, 12, 0.1);
+  border-radius: 0.5rem;
+  background-color: rgba(24, 35, 131, 0.3);
+  display: grid;
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+.user label {
+    text-align: left;
+    padding-right: 1rem;
+}
+
+.user input, select, textarea {
+   font-size: 1.1rem;
+   padding: 1rem;
+   text-align: right;
+   justify-content: right;
+   align-items: right;
+}
+
+.user input[type="checkbox"] {
+  vertical-align: bottom;
+}
+
+.user button {
+    display: flex;
+  background-color: var(--accent-color1);
+  color: #fff;
+  border: none;
+  border-radius: .5rem;
+  font-size: 1.2rem;
+  width: 300px;
+  justify-content: center;
+  align-content: center;
+  font-family: var(--body-font);
+}
+
+.user button:hover {
+  background-color: rgb(117, 25, 18);
+}
+
+.username, .email{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.email label{
+    margin-right: 34px;
+
+    
+}
+.username input{
+    align-self: flex-end;
+
+}
+.serve {
+    padding: 10px;
+    text-align: center;
+
+}
+
+.serve-row {
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    
+}
+
+.serve-row figure {
+    text-align: center;
+    color: var(--accent-color3);
+}
+
+.serve-row img {
+    width: 160px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+}
+
+.serve-row figcaption {
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+
