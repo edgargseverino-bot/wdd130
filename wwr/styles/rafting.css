@@ -270,13 +270,14 @@ nav, p, section
 .user {
   margin: 0 auto;
   padding: 1rem;
-  border: 1px solid rgba(92, 12, 12, 0.1);
+  border: 1px solid rgb(92, 12, 12, 0.1);
   border-radius: 0.5rem;
-  background-color: rgba(24, 35, 131, 0.3);
+  background-color: rgb(56, 58, 73, 0.1);
     grid-column: 2;
     display: flex;
     flex-direction: column;
     justify-items: center;
+    font-family: var(--body-font);
 }
 .user label {
     text-align: left;
@@ -292,12 +293,13 @@ nav, p, section
 
 .user input[type="checkbox"] {
   vertical-align: bottom;
+
 }
 
 .user button {
     display: flex;
   background-color: var(--accent-color1);
-  color: #fff;
+  color:rgb(255, 255, 255);
   border: none;
   border-radius: .5rem;
   font-size: 1.2rem;
