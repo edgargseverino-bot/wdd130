@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    height: 400px;
+    max-width: 500px;
+    margin: 1rem;
+   
+}
+h1{
+    margin: .5rem;
+}
+.quiz{
+       border: 1px solid rgb(0, 0, 0, 10%);
+    padding: 1rem;
+    background-color: rgba(17, 74, 148, 0.1);
+}
+.q1, .q2, .q3, .q4{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+
+}
+
+.q2 textarea{
+    height:60px;
+}
+
+.q4 code{
+    height: 30px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(43, 42, 42);
+    color: rgb(241, 239, 239);
+    margin-left: 70px;
+    width: 200px;
+
+}
+.q4 input{
+    gap: 5px;
+}
+.submit{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 20px;
+}
+.submit button{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 400px;
+    border-width: 100px;
+    border-radius: .5rem;
+    background-color: rgb(8, 77, 156);
+    font-size: 1.2rem;
+    border: none;
+    color: rgb(241, 239, 239);
+    margin-left: 35px;
+    gap: 5px;
+}
+.submit button:hover{
+    background-color: rgb(9, 88, 26);
+    color: rgb(241, 239, 239);
+}
