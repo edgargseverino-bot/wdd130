@@ -409,7 +409,7 @@ This will include some specific changes */
     height: 32rem;
     object-fit: cover;
     mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 40%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 30% transparent 10%);
+    -webkit-mask-image: linear-gradient(to bottom,black 30%, transparent 100%);
 }
 
 .home_hero-text {
