@@ -4,7 +4,25 @@ main{
 main img{
     width: 150px;
     height: auto;
+    padding: 5px;
+    border: solid 1px black;
+    box-shadow: 1px 3px 15px gray ;
 
+}
+body nav{
+    padding: 10px;
+    background-color: gray;
+
+}
+
+body nav a{
+    color: black;
+    padding: 2px;
+    display: block;
+}
+
+h1 {
+    color: black;
 }
 aside{
     width: 20em;
