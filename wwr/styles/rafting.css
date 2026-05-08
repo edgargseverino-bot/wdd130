@@ -19,13 +19,13 @@ main{
     padding-top: 70px;
 }
 header{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 60px 1fr;
     align-content: space-between;
     background-color: var(--accent-color2);
     text-decoration: none;
     height: 60px;
-    gap: 40px;
+    gap: 900px;
     position: fixed;
     right: 0;
     top: 0;
