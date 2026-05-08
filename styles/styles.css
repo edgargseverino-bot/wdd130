@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-main{
+main, aside, footer{
    max-width: 840px;
 }
 main img{
