@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-main, aside, footer{
+main{
    max-width: 840px;
 }
 main img{
@@ -37,8 +37,13 @@ h1 {
 aside{
     width: 20em;
     text-align: center;
+    padding: 1em;
+    margin: 1em;
+    border: 1px solid gray;
+    background-color: rgb(78, 76, 76);
+    color: rgb(255, 255, 255);
 }
-.box h2{
+aside h2{
     position: absolute;
     color: black;
     font-size: 15px;
@@ -46,7 +51,7 @@ aside{
     left: 125px;    
 
 }
-.box img{
+aside img{
     width: 200px;
     height: auto;
     position: relative;
@@ -69,11 +74,3 @@ div{
     margin-left: 10px;
 }
 /*Class Selectors*/
-.box{
-    padding: 1em;
-    margin: 1em;
-    border: 1px solid gray;
-    background-color: rgb(78, 76, 76);
-    color: rgb(255, 255, 255);
-
-}
