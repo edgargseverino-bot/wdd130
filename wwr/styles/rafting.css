@@ -18,21 +18,47 @@
 main{
     padding-top: 70px;
 }
-header{
+header {
     display: grid;
     grid-template-columns: 60px 1fr;
-    align-content: space-between;
+
+    align-items: center;
+
     background-color: var(--accent-color2);
-    text-decoration: none;
+
     height: 60px;
-    gap: 900px;
+
     position: fixed;
-    right: 0;
     top: 0;
     left: 0;
-    bottom: 70px;
+    right: 0;
+
+    padding: 0 20px;
+
     z-index: 1000;
 }
+
+header > :last-child {
+    justify-self: end;
+}
+@media (max-width: 700px) {
+
+    header {
+        grid-template-columns: 40px 1fr;
+        padding: 0 10px;
+    }
+
+}
+
+@media (min-width: 701px) and (max-width: 1400px) {
+
+    header {
+        grid-template-columns: 60px 1fr;
+        padding: 0 20px;
+    }
+
+}
+
 .left-section{
     flex: 1;
     padding-left: 10px;
@@ -295,7 +321,7 @@ This will include some specific changes */
   align-items: center;
   gap: 10px;
   margin-bottom: 1rem;
-  margin-top: 5px;
+  margin-top: -15px;
 }
 
 .purpose-title {
@@ -308,24 +334,44 @@ This will include some specific changes */
     flex-direction: column;
     margin-top: 30px;
 }
+.purpose-options input, .checkbox input{
+    cursor: pointer;
+}
 .user {
     color: rgb(255, 255, 255);
     margin: 0 auto;
-    padding: 1rem;
-    border: 1px solid rgb(92, 12, 12, 0.1);
-    border-radius: 0.5rem;
-    background-color: rgb(99, 105, 145);
+    padding: 1rem;;
+    background-color: var(--accent-color1);
     grid-column: 2;
     display: flex;
     flex-direction: column;
     justify-items: center;
     font-family: var(--body-font);
+    height: 400px;
+    border-radius: 3px;
 }
 .user label {
-    text-align: left;
     padding-right: 1rem;
 }
+.username input, .email input{
+    margin-top: 5px;
+    height: 10px;
+    border: none
+}
+.username input, .email input, textarea{
+        background-color: rgb(255, 255, 255);
+}
+.username input::placeholder, .email input::placeholder, textarea::placeholder{
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
 
+
+.checkbox{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
 .user input, select, textarea {
    font-size: 1.1rem;
    padding: 1rem;
@@ -341,8 +387,14 @@ This will include some specific changes */
 .user button {
   border: none;
   width: 300px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  align-self: center;
 }
+
+.user button:hover{
+    background-color: white ;
+    color: var(--accent-color1)
+}
+
 
 
 .username, .email{
@@ -363,6 +415,9 @@ This will include some specific changes */
     padding: 10px;
     text-align: center;
 
+}
+.serve-row img:hover{
+    transform: translateY(-5px);
 }
 
 .serve-row {
@@ -385,6 +440,8 @@ This will include some specific changes */
     object-fit: cover;
     border-radius: 6px;
     display: block;
+    cursor: pointer;
+    transition: transform 0.15s;
 }
 
 .serve-row figcaption {
@@ -393,7 +450,7 @@ This will include some specific changes */
 }
 
 
-/* HOME.HTML CSS */
+/* INDEX.HTML CSS */
 .main {
     background-color: var(--accent-color1);
 }
@@ -480,14 +537,10 @@ justify-content: center;
 align-items: center;
 flex-direction: column;  
 height: 300px;
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 margin-bottom: 40px;
 
 }
 
-.newsletter div{
-    border:  solid 1px var(--accent-color2);
-}
 
 .newsletter h2{
     width: 100%
