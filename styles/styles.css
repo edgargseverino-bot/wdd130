@@ -4,17 +4,40 @@
     box-sizing: border-box;
 }
 
-main{
+.grid, header, footer{
    max-width: 840px;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+main{
+    grid-column: 2/3;
+
 }
 main img{
     width: 150px;
-    height: auto;
+    height: 150px;
     padding: 5px;
     border: solid 1px black;
     box-shadow: 1px 3px 15px gray ;
     
 
+}
+
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+nav a{
+    text-decoration: none;
+    
 }
 body{
     margin-left: 10px;
@@ -23,6 +46,9 @@ body nav{
     padding: 10px;
     background-color: gray;
 
+}
+nav, .grid{
+    width: 1110px;
 }
 
 body nav a{
@@ -42,6 +68,8 @@ aside{
     border: 1px solid gray;
     background-color: rgb(78, 76, 76);
     color: rgb(255, 255, 255);
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 aside h2{
     position: absolute;
@@ -74,3 +102,7 @@ div{
     margin-left: 10px;
 }
 /*Class Selectors*/
+.box{
+    margin-left: 30px;
+    margin-top: 10px;
+}

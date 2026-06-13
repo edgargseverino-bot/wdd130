@@ -107,7 +107,7 @@ header a:hover{
     
 }
 
-h2{
+.newsletter h2, .section-title h2{
     font-family: var(--body-font);
     color: var(--accent-color2);
     background-color: var(--accent-color1);
@@ -223,7 +223,6 @@ section
     text-align: center;
     opacity: 1;
     color: var(--accent-color2);
-    background-color: rgb(0, 0, 0, 0.4);
     font-family: var(--heading-font);
     font-size: 2rem;
     border-radius: 8px;
@@ -257,6 +256,12 @@ section
     object-fit: cover;
     border-radius: 6px;
     display: block;
+    cursor: pointer;
+    transition: transform 0.15s ;
+    
+}
+figure img:hover{
+    transform: translateY(-10px);
 }
 
 .adventure-row figcaption {
@@ -454,15 +459,27 @@ This will include some specific changes */
     font-weight: bold;
 }
 
-
 /* INDEX.HTML CSS */
 .main {
     background-color: var(--accent-color1);
 }
 .hero_home-hero {
-     position: relative;
+    position: relative;
     display: grid;
     grid-row: 1;
+    overflow: hidden;
+}
+
+.hero_home-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        transparent 60%,
+        white 100%
+    );
+
 }
 
 .hero_home-hero img{
@@ -470,8 +487,7 @@ This will include some specific changes */
     width: 100%;
     height: 32rem;
     object-fit: cover;
-    mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 40%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to bottom,black 30%, transparent 100%);
+
 }
 
 .home_hero-text {
@@ -584,9 +600,6 @@ margin-bottom: 40px;
 
 /* ---------- GLOBAL BODY STYLING ---------- */
 body {
-  font-family: var(--body-font);
-  background: rgb(255, 255, 255);
-  color: var(--accent-color3);
   line-height: 1.6;
 }
 
@@ -603,7 +616,6 @@ body {
   height: 100%;
   object-fit: cover;
   display: block;
-  mask-image: linear-gradient(to top, black 90%, transparent 90%);
 }
 
 /* Optional text on hero */
@@ -617,15 +629,7 @@ body {
   text-shadow: 0 6px 20px rgba(0,0,0,0.7);
 }
 
-/* ---------- SECTION TITLES ---------- */
-.section-title {
-  font-size: 1.9rem;    
-  color: var(--accent-color2);
-  margin: 2rem 0 1rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: bolder;
-}
+
 
 /* ---------- CARD LAYOUT (SERVICES / FEATURES) ---------- */
 .card-grid {
@@ -636,7 +640,7 @@ body {
   background-image: url(images/photo_2.jpg)
 }
 .card-grid h3{
-    color: var(--accent-color2);
+    color: var(--accent-color1);
 }
 
 
@@ -652,6 +656,7 @@ body {
     overflow: hidden;
     background-size: cover;
     background-position: center center;
+    cursor: pointer;
 }
 
 .card:hover {
